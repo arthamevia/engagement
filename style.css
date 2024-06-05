@@ -35,7 +35,7 @@
 .nav {
     width: 90%;
     height: auto;
-    background-color: rgba(0, 0, 128, .7); /* darker blue */
+    background-color: #1c4966; /* darker blue */
     border-radius: 30px;
     margin-top: 40px;
     display: flex;
@@ -46,8 +46,8 @@
 
 .nav b {
     font-size: 40px;
-    margin-left: 20px;
-    color: #000; /* black text */
+    margin-left: 10px;
+    color: #fff; /* black text */
 }
 
 .menu {
@@ -59,7 +59,8 @@
 
 .menu h1 {
     font-size: 30px;
-    color: #000; /* black text */
+    color: #fff; /* black text */
+    margin-right: 10px;
     font-weight: bolder;
 }
 
