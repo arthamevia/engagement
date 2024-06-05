@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script src="https://kit.fontawesome.com/11acc5a5c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Engagement</title>
+</head>
+<body>
+    <audio id="background-audio" autoplay>
+        <source src="sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="audio-control" class="floating-button">
+        <i id="audio-icon" class="fas fa-play"></i>
+    </div>
+    <div class="container">
+        <div class="banner">
+            <div class="nav">
+                <b>Aris and Yuli</b>
+                <div class="menu">
+                    <h1>Engagement</h1>
+                </div>
+            </div>
+            <div class="text">
+                <span class="date">07 Juli 2024</span>
+            </div>
+        </div>
+        <div class="section">
+            <div class="us">
+                <h2><a name="us">Us</a></h2>
+                <div class="us1">
+                    <img src="img/ii.jpg" alt="ii">
+                    <span>Yuli is mine!</span>
+                </div>
+                <div class="us1">
+                    <img src="img/aa.jpg" alt="aa">
+                    <span>Aris is mine!</span>
+                </div>
+            </div>
+            <div class="venue">
+                <h2><a name="venue">Y | A</a></h2>
+                <img src="img/kita.JPG" alt="Venue">
+                <p>Berjuta rasa-rasa yang tak mampu diungkapkan kata-kata. Dengan beribu cara-cara kau selalu membuat kubahagia.</p>
+            </div>
+            <div class="party">
+                <h2><a name="party">Y | A</a></h2>
+                <img src="img/kita3.jpg" alt="Party">
+                <p>Sejak kita bertemu, hidupku menjadi lebih bermakna. Aku jatuh cinta padamu setiap hari.</p>
+            </div>
+        </div>
+        <footer>
+            <p>Send your best wishes!</p>
+            <a href="https://wa.me/6289671303931?text=Happy%20Engagement%20Aris%20dan%20Yuli💐🥰" target="_blank">
+                <i class="fab fa-whatsapp"></i> Send to Yuli
+            </a>
+            <a href="https://wa.me/6282115447352?text=Happy%20Engagement%20Aris%20dan%20Yuli💐" target="_blank">
+                <i class="fab fa-whatsapp"></i> Send to Aris
+            </a>
+        </footer>
+    </div>
+    <script>
+        const audio = document.getElementById('background-audio');
+        const audioControl = document.getElementById('audio-control');
+        const audioIcon = document.getElementById('audio-icon');
+
+        audioControl.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                audioIcon.classList.remove('fa-play');
+                audioIcon.classList.add('fa-pause');
+            } else {
+                audio.pause();
+                audioIcon.classList.remove('fa-pause');
+                audioIcon.classList.add('fa-play');
+            }
+        });
+    </script>
+</body>
+</html>
