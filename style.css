@@ -70,12 +70,12 @@
 
 .invitation h2 {
     color: #1c4966; /* Warna teks */
-    font-size: 28px; /* Ukuran teks */
+    font-size: 32px; /* Ukuran teks */
     margin-bottom: 10px; /* Jarak bawah judul */
 }
 
 #guest-name {
-    font-size: 24px; /* Ukuran teks */
+    font-size: 32px; /* Ukuran teks */
     color: #1c4966; /* Warna teks */
     font-weight: bold; /* Ketebalan teks */
     margin-bottom: 20px; /* Jarak bawah nama tamu */
