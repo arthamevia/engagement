@@ -62,6 +62,25 @@
     flex-wrap: wrap;
 }
 
+.invitation {
+    width: calc(100% - 20px); /* Lebar total dikurangi 20px untuk margin */
+    margin: 20px;
+    text-align: right; /* Mengatur teks ke kanan */
+}
+
+.invitation h2 {
+    color: #1c4966; /* Warna teks */
+    font-size: 28px; /* Ukuran teks */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+#guest-name {
+    font-size: 24px; /* Ukuran teks */
+    color: #1c4966; /* Warna teks */
+    font-weight: bold; /* Ketebalan teks */
+    margin-bottom: 20px; /* Jarak bawah nama tamu */
+}
+
 .menu h1 {
     font-size: 30px;
     color: #fff; /* black text */
