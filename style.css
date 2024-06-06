@@ -20,7 +20,7 @@
 .banner {
     width: 100%;
     height: 650px;
-    background-image: url(kitaweh.jpg);
+    background-image: url(img/kitaweh.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -47,6 +47,11 @@
 .nav b {
     font-size: 40px;
     margin-left: 10px;
+    color: #fff; /* black text */
+}
+.nav h1 {
+    font-size: 30px;
+    margin-right: 10px;
     color: #fff; /* black text */
 }
 
