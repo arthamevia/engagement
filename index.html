@@ -21,7 +21,7 @@
         <div class="banner">
             <div class="nav">
                 <b>Aris and Yuli</b>
-                    <h1>Engagement</h1>
+                <h1>Engagement</h1>
             </div>
             <div class="text">
                 <span class="date">07 Juli 2024</span>
@@ -61,20 +61,51 @@
         </footer>
     </div>
     <script>
-        const audio = document.getElementById('background-audio');
-        const audioControl = document.getElementById('audio-control');
-        const audioIcon = document.getElementById('audio-icon');
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('background-audio');
+            const audioControl = document.getElementById('audio-control');
+            const audioIcon = document.getElementById('audio-icon');
 
-        audioControl.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play();
-                audioIcon.classList.remove('fa-play');
-                audioIcon.classList.add('fa-pause');
-            } else {
-                audio.pause();
+            // Initially set the icon to play
+            audioIcon.classList.add('fa-play');
+
+            // Check if audio is playing after a short delay
+            setTimeout(() => {
+                if (!audio.paused) {
+                    audioIcon.classList.remove('fa-play');
+                    audioIcon.classList.add('fa-pause');
+                }
+            }, 100);
+
+            audioControl.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                    audioIcon.classList.remove('fa-play');
+                    audioIcon.classList.add('fa-pause');
+                } else {
+                    audio.pause();
+                    audioIcon.classList.remove('fa-pause');
+                    audioIcon.classList.add('fa-play');
+                }
+            });
+
+            // Change icon to play when audio ends
+            audio.addEventListener('ended', () => {
                 audioIcon.classList.remove('fa-pause');
                 audioIcon.classList.add('fa-play');
-            }
+            });
+
+            // Ensure icon updates when the audio is manually paused
+            audio.addEventListener('pause', () => {
+                audioIcon.classList.remove('fa-pause');
+                audioIcon.classList.add('fa-play');
+            });
+
+            // Ensure icon updates when the audio is manually played
+            audio.addEventListener('play', () => {
+                audioIcon.classList.remove('fa-play');
+                audioIcon.classList.add('fa-pause');
+            });
         });
     </script>
 </body>
