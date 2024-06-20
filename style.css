@@ -46,7 +46,7 @@
 
 .nav b {
     font-size: 40px;
-    margin-left: 10px;
+    margin-left: 30px;
     color: #fff; /* black text */
 }
 .nav h1 {
@@ -91,7 +91,7 @@
 .text {
     width: 100%;
     position: relative;
-    top: 40px;
+    top: 97px;
     left: 20px;
     font-size: 50px;
     text-align: left;
